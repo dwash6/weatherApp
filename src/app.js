@@ -3,7 +3,7 @@ let express = require('express');
 let hbs = require('hbs');
 let weather = require('./utils/weather');
 let app = express();
-let port = process.env.port || 3000;
+let port = process.env.PORT || 3000;
 
 // website
 // will contain the following routes:
