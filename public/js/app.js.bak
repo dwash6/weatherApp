@@ -64,7 +64,8 @@ weatherForm.addEventListener('submit', (e) => {
 			currentTemp.textContent = data.weather.currentTemp + "°F";
 			message3.textContent = "Feels Like Temperature: ";
 			feelsLikeTemp.textContent = data.weather.feelsLikeTemp + "°F";
-			console.log(data.weather.currentTime);
+			message4.textContent = "Local " + data.weather.city + ", " + data.weather.state + " time:";
+			currentTime.textContent = data.weather.currentTime;
 		}
 	});
 });

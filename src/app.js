@@ -3,6 +3,7 @@ let express = require('express');
 let hbs = require('hbs');
 let weather = require('./utils/weather');
 let app = express();
+let port = process.env.port || 3000;
 
 // website
 // will contain the following routes:
@@ -130,8 +131,8 @@ app.get('*', (req, res) => {
 
 // add a function as an argument which can tell what happens when the
 // server is loaded
-app.listen(3000, () => {
-	console.log('Server is life on port 3000.');
+app.listen(port, () => {
+	console.log('This server is live!');
 	console.log('Open your web browser and go to the following URL - localhost:3000');
 	console.log('To exit, come back to Node.js command prompt and enter Ctrl+C');
 });
