@@ -1,0 +1,3 @@
+<footer>
+	<p>&copy; 2022 - {{course}} - Server Side JS Course Weather App by {{name}}</p>
+</footer>
